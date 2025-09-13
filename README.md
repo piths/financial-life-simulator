@@ -144,8 +144,8 @@ GOOGLE_API_KEY=your_google_key
 
 ## 🎬 Demo & Submission
 
-- **🌐 Live Demo**: [Your deployed URL here]
-- **💻 Source Code**: [GitHub repository]
+- **🌐 Live Demo**: [Deploy to Vercel for live demo]
+- **💻 Source Code**: [https://github.com/piths/financial-life-simulator](https://github.com/piths/financial-life-simulator)
 - **📹 Demo Video**: [Optional - YouTube/Vimeo link]
 
 ## 🤝 Contributing
