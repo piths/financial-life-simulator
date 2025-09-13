@@ -1,4 +1,4 @@
-# Financial Life Simulator 🎯💰
+# Financial Life Simulator(FinanceSim) 🎯💰
 
 **Hack the System - Track 1: Hack the Economy**
 
