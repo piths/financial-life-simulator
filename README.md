@@ -17,7 +17,7 @@ Financial literacy is a critical life skill, yet traditional education often fai
 
 ### 🧠 **AI-Powered Financial Coaching**
 - Personalized insights based on your decisions
-- Real-time recommendations from multiple AI providers (OpenAI, Anthropic, Google)
+- Real-time recommendations from multiple AI providers (OpenAI and Google)
 - Peer comparisons with national financial averages
 - Contextual educational tips explaining the "why" behind each choice
 
