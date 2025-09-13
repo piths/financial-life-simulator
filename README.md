@@ -50,11 +50,11 @@ This project directly addresses the **"Hack the Economy"** track by:
 
 ## 🛠 Technology Stack
 
-- **Frontend**: Next.js 14, React 18, TypeScript
+- **Frontend**: Next.js 15, React , TypeScript
 - **Styling**: Tailwind CSS, shadcn/ui components
 - **Data Visualization**: Recharts for interactive financial charts
 - **State Management**: Zustand for efficient state handling
-- **AI Integration**: Multi-provider support (OpenAI GPT-4, Anthropic Claude, Google Gemini)
+- **AI Integration**: Multi-provider support (OpenAI GPT-0ss 120b open model in groq.com and Google Gemini)
 - **Deployment**: Vercel-optimized for instant global deployment
 
 ## 🚀 Getting Started
@@ -84,9 +84,16 @@ cp .env.local.example .env.local
 
 2. **Add AI API keys** (optional - app works without them):
 ```env
-OPENAI_API_KEY=your_openai_key
-ANTHROPIC_API_KEY=your_anthropic_key  
-GOOGLE_API_KEY=your_google_key
+# AI API Configuration
+
+# Groq API (Primary - Fast & Reliable)
+NEXT_PUBLIC_GROQ_API_KEY=your_groq_api_key_here
+# Get your API key from: https://console.groq.com/keys
+
+# Optional: Gemini API (if you want to experiment)
+# NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key_here
+# Get your API key from: https://makersuite.google.com/app/apikey
+
 ```
 
 ## 🎮 How to Play
@@ -144,9 +151,8 @@ GOOGLE_API_KEY=your_google_key
 
 ## 🎬 Demo & Submission
 
-- **🌐 Live Demo**: [Deploy to Vercel for live demo]
+- **🌐 Live Demo**: 
 - **💻 Source Code**: [https://github.com/piths/financial-life-simulator](https://github.com/piths/financial-life-simulator)
-- **📹 Demo Video**: [Optional - YouTube/Vimeo link]
 
 ## 🤝 Contributing
 
