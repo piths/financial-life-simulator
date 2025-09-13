@@ -2,7 +2,7 @@
 
 **Hack the System - Track 1: Hack the Economy**
 
-An interactive life simulation game that democratizes financial education by making complex economic concepts accessible through hands-on experience. Players navigate from age 18 to 65, making crucial financial decisions and watching their choices compound into wealth or debt—all without real-world risk.
+An interactive life simulation game that democratizes financial education by making complex economic concepts accessible through hands-on experience. Players navigate from age 14 to 65, making crucial financial decisions and watching their choices compound into wealth or debt—all without real-world risk.
 
 ## 🌟 Why This Matters
 
