@@ -219,7 +219,7 @@ export function InitialSetupModal({ isOpen, onClose, onSubmit, defaultValues, sh
               <Input
                 type="number"
                 min="0"
-                step="1000"
+                step="1"
                 value={formData.income ?? ''}
                 onChange={(e) => handleInputChange('income', e.target.value === '' ? 0 : parseInt(e.target.value))}
                 className={errors.income ? 'border-red-500' : ''}
@@ -233,7 +233,7 @@ export function InitialSetupModal({ isOpen, onClose, onSubmit, defaultValues, sh
               <Input
                 type="number"
                 min="0"
-                step="100"
+                step="1"
                 value={formData.monthlyExpenses ?? ''}
                 onChange={(e) => handleInputChange('monthlyExpenses', e.target.value === '' ? 0 : parseInt(e.target.value))}
                 className={errors.monthlyExpenses ? 'border-red-500' : ''}
@@ -247,7 +247,7 @@ export function InitialSetupModal({ isOpen, onClose, onSubmit, defaultValues, sh
               <Input
                 type="number"
                 min="0"
-                step="500"
+                step="1"
                 value={formData.savings ?? ''}
                 onChange={(e) => handleInputChange('savings', e.target.value === '' ? 0 : parseInt(e.target.value))}
                 className={errors.savings ? 'border-red-500' : ''}
@@ -261,7 +261,7 @@ export function InitialSetupModal({ isOpen, onClose, onSubmit, defaultValues, sh
               <Input
                 type="number"
                 min="0"
-                step="1000"
+                step="1"
                 value={formData.debt ?? ''}
                 onChange={(e) => handleInputChange('debt', e.target.value === '' ? 0 : parseInt(e.target.value))}
                 className={errors.debt ? 'border-red-500' : ''}
@@ -275,7 +275,7 @@ export function InitialSetupModal({ isOpen, onClose, onSubmit, defaultValues, sh
               <Input
                 type="number"
                 min="0"
-                step="500"
+                step="1"
                 value={formData.investments ?? ''}
                 onChange={(e) => handleInputChange('investments', e.target.value === '' ? 0 : parseInt(e.target.value))}
                 className={errors.investments ? 'border-red-500' : ''}

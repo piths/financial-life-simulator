@@ -6,8 +6,13 @@ import { ThemeProvider } from '@/components/theme-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Financial Life Simulator',
-  description: 'Interactive life simulation game that teaches financial literacy through realistic decision-making scenarios',
+  title: 'FinanceSim - Financial Life Simulator',
+  description: 'Interactive life simulation game that teaches financial literacy through realistic decision-making scenarios. Learn money management, investing, and financial planning in a risk-free environment.',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({
