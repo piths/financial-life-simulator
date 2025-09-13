@@ -11,11 +11,10 @@ import { DecisionHistory } from '@/components/game/DecisionHistory'
 import { FinancialSummary } from '@/components/game/FinancialSummary'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { AIDecisionHelper } from '@/components/ai/AIDecisionHelper'
-import { AIPersonalizedInsights } from '@/components/ai/AIPersonalizedInsights'
 import { AIJourneyAnalysis } from '@/components/ai/AIJourneyAnalysis'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Trophy, Share2, RotateCcw, Home, Sparkles, Brain, ChevronLeft, ChevronRight, Rewind, Settings, FileText, BarChart3, TrendingUp } from 'lucide-react'
+import { Trophy, Share2, RotateCcw, Home, Brain, ChevronLeft, ChevronRight, Rewind, Settings, FileText, BarChart3, TrendingUp } from 'lucide-react'
 import Link from 'next/link'
 import { formatCurrency } from '@/lib/utils'
 import { FinancialState } from '@/types/game'
@@ -38,7 +37,6 @@ export default function GamePage() {
 
   const [chartData, setChartData] = useState<any[]>([])
   const [currentView, setCurrentView] = useState('game')
-  const [showAIInsights, setShowAIInsights] = useState(false)
   const [showAIHelper, setShowAIHelper] = useState(false)
   const [showInitialSetup, setShowInitialSetup] = useState(false)
   const [gameInitialized, setGameInitialized] = useState(false)
@@ -524,18 +522,8 @@ export default function GamePage() {
                 </CardContent>
               </Card>
 
-              {/* Optional AI Features - Collapsed by default */}
+              {/* AI Helper - Collapsed by default */}
               <div className="flex gap-2">
-                <Button
-                  variant="outline"
-                  size="sm"
-                  onClick={() => setShowAIInsights(!showAIInsights)}
-                  className="flex-1 text-xs sm:text-sm"
-                >
-                  <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                  <span className="hidden sm:inline">Insights</span>
-                  <span className="sm:hidden">AI</span>
-                </Button>
                 <Button
                   variant="outline"
                   size="sm"
@@ -543,22 +531,11 @@ export default function GamePage() {
                   className="flex-1 text-xs sm:text-sm"
                 >
                   <Brain className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                  <span className="hidden sm:inline">Helper</span>
+                  <span className="hidden sm:inline">AI Helper</span>
                   <span className="sm:hidden">Help</span>
                 </Button>
               </div>
 
-              {/* AI Insights - When expanded */}
-              {showAIInsights && (
-                <Card>
-                  <CardContent className="p-3 sm:p-4">
-                    <AIPersonalizedInsights 
-                      financials={playerFinancials}
-                      decisionHistory={decisionHistory}
-                    />
-                  </CardContent>
-                </Card>
-              )}
 
               {/* Year Navigation Timeline - Mobile: Show only on larger screens or when expanded */}
               {hasRewindsLeft() && getCompletedDecisions().length > 1 && (

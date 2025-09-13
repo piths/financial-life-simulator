@@ -19,7 +19,7 @@ interface InitialSetupModalProps {
 
 export function InitialSetupModal({ isOpen, onClose, onSubmit, defaultValues, showSkipOption = false }: InitialSetupModalProps) {
   const [formData, setFormData] = useState<Partial<FinancialState>>({
-    age: 14,
+    age: defaultValues?.age || 14,
     income: 0,
     monthlyExpenses: 200,
     savings: 500,
@@ -34,7 +34,7 @@ export function InitialSetupModal({ isOpen, onClose, onSubmit, defaultValues, sh
   useEffect(() => {
     if (defaultValues) {
       setFormData(prev => ({
-        age: 14,
+        age: defaultValues.age || 14,
         income: 0,
         monthlyExpenses: 200,
         savings: 500,
