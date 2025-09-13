@@ -65,9 +65,26 @@ export default function LandingPage() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-600 dark:text-gray-400">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="w-8 h-8 bg-gradient-to-br from-emerald-400 to-blue-400 rounded-full border-2 border-white dark:border-slate-900" />
-                ))}
+                <img 
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face&auto=format&q=80" 
+                  alt="User avatar" 
+                  className="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 object-cover"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face&auto=format&q=80" 
+                  alt="User avatar" 
+                  className="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 object-cover"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face&auto=format&q=80" 
+                  alt="User avatar" 
+                  className="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 object-cover"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=32&h=32&fit=crop&crop=face&auto=format&q=80" 
+                  alt="User avatar" 
+                  className="w-8 h-8 rounded-full border-2 border-white dark:border-slate-900 object-cover"
+                />
               </div>
               <span>10,000+ learners</span>
             </div>
