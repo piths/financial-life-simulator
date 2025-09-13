@@ -38,13 +38,13 @@ const Logo: React.FC<LogoProps> = ({
           className="drop-shadow-lg"
         >
           {/* Background Circle with subtle gradient */}
-          <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" stroke="url(#borderGradient)" stroke-width="3"/>
+          <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" stroke="url(#borderGradient)" strokeWidth="3"/>
           
           {/* Main Dollar Sign - Modern and bold */}
-          <path d="M100 50 L100 150 M80 60 L120 60 M80 140 L120 140" stroke="url(#dollarGradient)" stroke-width="10" stroke-linecap="round"/>
+          <path d="M100 50 L100 150 M80 60 L120 60 M80 140 L120 140" stroke="url(#dollarGradient)" strokeWidth="10" strokeLinecap="round"/>
           
           {/* Growth Arrow - Clean and modern */}
-          <path d="M130 70 L155 45 L145 45 L145 35 L165 35 L165 55 L175 55" stroke="url(#arrowGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <path d="M130 70 L155 45 L145 45 L145 35 L165 35 L165 55 L175 55" stroke="url(#arrowGradient)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
           
           {/* Chart Bars - Representing financial growth */}
           <rect x="35" y="130" width="10" height="25" fill="url(#chartGradient)" rx="3"/>
